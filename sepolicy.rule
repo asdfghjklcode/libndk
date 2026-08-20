@@ -1,0 +1,2 @@
+allow zygote binfmt_misc_fs { read open search getattr }
+allow init binfmt_misc_fs { write open }
