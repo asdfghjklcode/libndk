@@ -1,5 +1,5 @@
-id=aosp17_libndk_translation
-name=Android 17 AOSP libndk Translation
+id=aosp17_37.0_4kp_libndk_translation
+name=Android 17-37.0 4KB Pages AOSP libndk Translation
 version=v1.0.0
 versionCode=100
 author=asdfghjklcode
