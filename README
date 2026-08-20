@@ -1,0 +1,4 @@
+id=aosp16_libndk_translation
+name=Android 16 AOSP libndk Translation
+author=asdfghjklcode
+description=为 Android 16 AOSP x86_64 模拟器注入官方 ARM 翻译层。
