@@ -1,4 +1,4 @@
-id=aosp16_libndk_translation
-name=Android 16 AOSP libndk Translation
+id=aosp16_36.0_libndk_translation
+name=Android 16-36.0 AOSP libndk Translation
 author=asdfghjklcode
-description=为 Android 16 AOSP x86_64 模拟器注入官方 ARM 翻译层。
+description=为 Android 16 AOSP x86_64 (API 36.0) 模拟器注入 Native Bridge.
