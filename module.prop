@@ -3,4 +3,4 @@ name=Android 16 AOSP libndk Translation
 version=v1.0.0
 versionCode=100
 author=asdfghjklcode
-description=为 Android 16 AOSP x86_64 模拟器注入官方 ARM 翻译层。
+description=为 Android 16 AOSP x86_64 模拟器注入 Native Bridge.
