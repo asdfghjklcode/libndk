@@ -1,0 +1,14 @@
+# Enable native bridge for target executables
+on early-init
+    mount binfmt_misc binfmt_misc /proc/sys/fs/binfmt_misc
+
+on property:ro.dalvik.vm.native.bridge=libndk_translation.so && property:ro.dalvik.vm.isa.arm=x86
+    copy /system/etc/binfmt_misc/arm_exe /proc/sys/fs/binfmt_misc/register
+    copy /system/etc/binfmt_misc/arm_dyn /proc/sys/fs/binfmt_misc/register
+
+on property:ro.dalvik.vm.native.bridge=libndk_translation.so && property:ro.dalvik.vm.isa.arm64=x86_64
+    copy /system/etc/binfmt_misc/arm64_exe /proc/sys/fs/binfmt_misc/register
+    copy /system/etc/binfmt_misc/arm64_dyn /proc/sys/fs/binfmt_misc/register
+
+on property:ro.dalvik.vm.native.bridge=libndk_translation.so && property:ro.berberis.is_2nd_native_bridge=true
+    mount none /system/lib64/berberis/arm64 /system/lib64/arm64 bind
